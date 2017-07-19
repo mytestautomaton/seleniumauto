@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [GRID SAMPLE TEST]">
+  <parameter name="browserType" value="firefox"/>
+  <test name="GRID TEST WITH SERIAL EXECTION WITH BROWSER IE(failed)">
+    <parameter name="browserType" value="IE"/>
+    <classes>
+      <class name="GridExample">
+        <methods>
+          <include name="mailTest"/>
+        </methods>
+      </class> <!-- GridExample -->
+    </classes>
+  </test> <!-- GRID TEST WITH SERIAL EXECTION WITH BROWSER IE(failed) -->
+  <test name="GRID TEST WITH SERIAL EXECTION WITH BROWSER FF (failed)">
+    <parameter name="browserType" value="firefox"/>
+    <classes>
+      <class name="GridExample">
+        <methods>
+          <include name="mailTest"/>
+        </methods>
+      </class> <!-- GridExample -->
+    </classes>
+  </test> <!-- GRID TEST WITH SERIAL EXECTION WITH BROWSER FF (failed) -->
+</suite> <!-- Failed suite [GRID SAMPLE TEST] -->
